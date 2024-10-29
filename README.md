@@ -35,7 +35,7 @@ You can run [examples](https://github.com/HwangTaehyun/react-native-lottie-splas
 
 ## React-Native >= 0.70
 ### First step (Download):
-Run `yarn add lottie-react-native@6.7.2 react-native-lottie-splash-screen`
+Run `yarn add lottie-react-native@6.7.2 @attarchi/react-native-lottie-splash-screen`
 
 ### Second step (Plugin Installation):
 
