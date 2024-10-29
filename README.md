@@ -73,6 +73,7 @@ class MainActivity : ReactActivity() {
     super.onCreate(savedInstanceState)
     SplashScreen.show(this, R.style.SplashScreen_SplashTheme, R.id.lottie)
     // Skip waiting for the Lottie animation to finish
+    // To make the splash screen wait for the Lottie animation to finish set it to false
     SplashScreen.setAnimationFinished(true)
   }
   /* End */
@@ -193,6 +194,7 @@ import Lottie
  
     Dynamic *t = [Dynamic new];
     UIView *animationUIView = (UIView *)[t createAnimationViewWithRootView:rootView lottieName:@"loading"]; // change lottieName to your lottie files name
+    animationUIView.layer.zPosition = 1;
  
     // register LottieSplashScreen to RNSplashScreen
     [RNSplashScreen showLottieSplash:animationUIView inRootView:rootView];
@@ -201,6 +203,7 @@ import Lottie
     // play
     [t playWithAnimationView:animationView];
     // Skip waiting for the Lottie animation to finish
+    // To make the splash screen wait for the Lottie animation to finish set it to false
     [RNSplashScreen setAnimationFinished:true];
   }
  
