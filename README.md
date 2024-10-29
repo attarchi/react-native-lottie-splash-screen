@@ -554,8 +554,8 @@ You can create splash screens in the following folders:
 
 Drag your lottie files to Xcode Project. Click Finish. That's all.
 
-![](img/2022-07-09-16-40-46.png)
-![](img/2022-07-09-16-41-45.png)
+![](screenshot/2022-07-09-16-40-46.png)
+![](screenshot/2022-07-09-16-41-45.png)
 
 ## Expo bare workflow!!
 

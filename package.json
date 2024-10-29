@@ -1,6 +1,6 @@
 {
   "name": "react-native-lottie-splash-screen",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A lottie splash screen for react-native, hide when application loaded ,it works on iOS and Android.",
   "type": "module",
   "main": "index.js",
