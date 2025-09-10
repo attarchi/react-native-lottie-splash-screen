@@ -75,14 +75,19 @@ public class SplashScreen: NSObject, RCTBridgeModule {
             lottieView.play { finished in
                 DispatchQueue.main.async {
                     isAnimationFinished = true
-                    hideSplashScreen()
+                    // Only auto-hide if not forced to keep splash until explicit hide() is called
+                    if !forceToCloseByHideMethod {
+                        hideSplashScreen()
+                    }
                 }
             }
         } else {
             // Fallback for non-Lottie views
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 isAnimationFinished = true
-                hideSplashScreen()
+                if !forceToCloseByHideMethod {
+                    hideSplashScreen()
+                }
             }
         }
     }
