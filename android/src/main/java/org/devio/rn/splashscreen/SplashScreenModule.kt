@@ -23,6 +23,8 @@ class SplashScreenModule(reactContext: ReactApplicationContext) : ReactContextBa
      */
     @ReactMethod
     fun hide() {
-        SplashScreen.hide(reactApplicationContext.currentActivity)
+        reactApplicationContext.currentActivity?.let {
+            SplashScreen.hide(it)
+        }
     }
 }
